@@ -1,0 +1,30 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.txt{
+	-fx-border-color: #200ED3;
+	-fx-border-size: 3px;
+	-fx-background-color: #fff;
+	-fx-border-radius: 3px;
+}
+
+.box {
+	-fx-effect : dropShadow(three-pass-box, rgba(0,0,0,.35), 5, 0, 1, 0);
+	-fx-background-radius: 3px;
+}
+
+.btn{
+	-fx-background-color: #200ED3;
+	-fx-text-fill: white;
+}
+
+.anchor{
+	-fx-background-color: #fff;
+}
+
+ScrollPane{
+	-fx-background-radius: 10px;
+}
+
+.title{
+	-fx-text-fill: #200ED3;
+}

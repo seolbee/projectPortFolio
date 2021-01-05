@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input{
+	display: none;
+}
+
+body{
+	background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+	background-repeat: no-repeat;
+	height: 969px;
+}
+
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 20px;
+	height: 50px;
+}
+
+.box{
+	position: absolute;
+	top: 51%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #eee;
+	font-size: 150px;
+	line-height: 150px;
+	text-shadow: 0px 0px 15px #c7ffff;
+	width: 1000px;
+}
+
+#led{
+	width: 20px;
+	height: 20px;
+	background-color: green;
+	border-radius: 50%;
+	position: absolute;
+	right: 0%;
+	bottom: 60%;
+	box-shadow: 0px 0px 20px 5px green;
+}
+
+.box .clock{
+	display: none;
+	line-height: 200px;
+	text-align: center;
+}
+
+.date{
+	font-size: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.box .stopwatch{
+	display: none;
+	line-height: 150px;
+	text-align: center;
+	width: 1000px;
+	height: 300px;
+}
+
+.box .timer{
+	display: none;
+	text-align: center;
+}
+
+.box .timer .input{
+	font-size: 50px;
+	line-height: 50px;
+	display: block;
+}
+
+#btn2{
+	line-height: 20px;
+}
+
+.label{
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+	height: 50px;
+	margin-bottom: 30px;
+}
+
+label{
+	display: flex;
+	justify-content: center;
+	padding: 0 100px;
+	line-height: 50px;
+	color: #000;
+	filter: blur(1px);
+}
+
+label:nth-child(1){
+	cursor: pointer;
+}
+
+#first:checked ~ div.clock{
+	display: block;
+}
+
+#first:checked ~ .label label:nth-child(1){
+	color: white;
+	filter: blur(0px);
+}
+#second:checked ~ .label label:nth-child(2){
+	color: white;
+	filter: blur(0px);
+}
+#third:checked ~ .label label:nth-child(3){
+	color: white;
+	filter: blur(0px);
+}
+
+label:nth-child(2){
+	cursor: pointer;
+}
+
+label:nth-child(3){
+	cursor: pointer;
+}
+
+#second:checked ~ div.stopwatch{
+	display: block;
+}
+
+#third:checked ~ div.timer{
+	display: block;
+}
+
+.a{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	line-height: 300px;
+}
+
+.b{
+	width: 90px;
+	height: 50px;
+	display: inline-block;
+	line-height: 60px;
+}

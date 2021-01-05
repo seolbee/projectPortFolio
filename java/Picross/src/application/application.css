@@ -1,0 +1,9 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.background{
+	-fx-background-color: linear-gradient(#262757 20%, #be83d4 100%);
+}
+
+.list:filled:selected:focused{
+	-fx-background-color: linear-gradient(#262757 80%, #be83d4 100%);
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="184.0" prefWidth="450.0" styleClass="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.RankController">
+   <children>
+      <Label alignment="CENTER" layoutX="132.0" layoutY="14.0" prefHeight="47.0" prefWidth="186.0" text="랭킹" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="17.0" layoutY="92.0" prefHeight="35.0" prefWidth="416.0" promptText="이름을 입력하세요" />
+      <Label fx:id="lblTime" layoutX="17.0" layoutY="56.0" prefHeight="35.0" prefWidth="186.0" text="시간 : " textFill="WHITE" />
+      <Button layoutX="332.0" layoutY="139.0" mnemonicParsing="false" onAction="#click" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: none;" text="저장하기" textFill="WHITE" />
+   </children>
+</AnchorPane>

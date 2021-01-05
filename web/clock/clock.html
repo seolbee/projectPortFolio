@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="clock.js"></script>
+	<link rel="stylesheet" href="clock.css">
+</head>
+<body>
+	<div class="box">
+		<input type="radio" id="first" name="dio" checked>
+		<input type="radio" id="second" name="dio">
+		<input type="radio" id="third" name="dio">
+		<div class="label">
+			<label for="first">시계</label>
+			<label for="second">타이머</label>
+			<label for="third">알람</label>
+		</div>
+		<div class="clock">
+			<div id="led"></div>
+			<div class="date">
+				<span id="year">0000</span> -
+				<span id="mo">00</span> -
+				<span id="cd">00</span>
+			</div>
+			<span class="ch">00</span> :
+			<span class="cm">00</span> :
+			<span class="cs">00</span>
+			<a href="#" id="btn">시간 정지</a>
+		</div>
+		<div class="stopwatch">
+			<div class="a">
+				<span id="sh" contenteditable="true">00</span> 
+			</div> :
+			<div class="a">
+				<span id="sm" contenteditable="true">00</span> 
+			</div> :
+			<div class="a">
+				<span id="ss" contenteditable="true">00</span>
+			</div>
+			<a href="#" id="btnStart">시작</a>
+		</div>
+		<div class="timer">
+			<div class="input">
+				<div class="b">
+					<span id="h" contenteditable="true">00</span>
+				</div> :
+				<div class="b">
+					<span id="m" contenteditable="true">00</span>
+				</div> :
+				<div class="b">
+					<span id="s" contenteditable="true">00</span>
+				</div>
+				<a href="#" id="btn2">알람 설정</a>	
+			</div>
+			<span id="th">00</span> :
+			<span id="tm">00</span> :
+			<span id="ts">00</span>
+		</div>
+	</div>
+</body>
+</html>

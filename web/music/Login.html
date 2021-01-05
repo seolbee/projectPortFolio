@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontAwesome/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <ul id="nav">
+            <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="library.html"><i class="fa fa-bookmark"></i>Library</a></li>
+            <li><a href="queue.html"><i class="fa fa-bars"></i>Queue</a></li>
+            <li class="active"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+    <section class="main background-color">
+        <header>
+            <div class="search_box">
+                <input type="text" placeholder="Searching Music">
+                <button class="search_btn"><i class="fa fa-search"></i></button>
+            </div>
+        </header>
+        <section class="login">
+            <p class="title">로그인</p>
+            <form action="/login/process" class="Login" method="post">
+                <div class="input_box">
+                    <label for="id">id</label>
+                    <input type="text" name="id" id="id">
+                </div>
+                <div class="input_box">
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button type="button" class="btn">로그인</button>
+            </div>
+        </section>
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="img"><img src="covers/180˚.jpg" alt="cover"></div>
+                    <div class="p_box">
+                        <span>180도</span>
+                    </div>
+                </div>
+                <div class="audio">
+                    <span>00:00 / 03:40</span>
+                    <div class="button_box">
+                        <button><i class="fa fa-refresh fa-lg"></i></button>
+                        <button><i class="fa fa-step-backward fa-lg"></i></button>
+                        <button><i class="fa fa-play fa-2x"></i></button>
+                        <button><i class="fa fa-step-forward fa-lg"></i></button>
+                        <button><i class="fa fa-indent fa-lg"></i></button>
+                        <button><i class="fa fa-volume-down fa-lg"></i></button>
+                        <input type="range" name="volume_controller" id="volume_controller" class="volume_controller">
+                    </div>
+                    <input type="range" name="controller" id="controller" class="controller" value="0">
+                </div>
+                <div class="lyrics">
+                    <p>사랑 다 비슷해</p>
+                    <p>그래 다 비슷해</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

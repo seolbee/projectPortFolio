@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.MainController">
+   <children>
+      <AnchorPane fx:id="APane" prefHeight="200.0" prefWidth="200.0" styleClass="background">
+         <children>
+            <Canvas fx:id="gameCanvas" height="320.0" layoutX="122.0" layoutY="191.0" onMouseClicked="#click" onMouseDragged="#click" width="320.0" />
+            <VBox fx:id="vbox" alignment="CENTER" layoutX="8.0" layoutY="191.0" prefHeight="320.0" prefWidth="106.0" />
+            <HBox fx:id="hbox" layoutX="122.0" layoutY="89.0" prefHeight="90.0" prefWidth="320.0" />
+            <Label fx:id="lblHour" alignment="CENTER" layoutX="14.0" layoutY="15.0" prefHeight="50.0" prefWidth="51.0" text="00" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="118.0" layoutY="14.0" prefHeight="50.0" prefWidth="16.0" text=":" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblMinute" alignment="CENTER" layoutX="71.0" layoutY="15.0" prefHeight="50.0" prefWidth="51.0" text="00" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="61.0" layoutY="14.0" prefHeight="50.0" prefWidth="16.0" text=":" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblSecond" alignment="CENTER" layoutX="130.0" layoutY="15.0" prefHeight="50.0" prefWidth="51.0" text="00" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Button layoutX="12.0" layoutY="532.0" mnemonicParsing="false" onAction="#cancel" prefHeight="50.0" prefWidth="123.0" style="-fx-background-color: none;" text="돌아가기" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
