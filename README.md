@@ -17,3 +17,7 @@ jsp 프로젝트에서 실행 안 되는 것
 jsp는 무조건 webcontent 안에 있는 sql 문을 실행시키고 나서 프로젝트를 실행해야 합니다.
 oracle을 사용하기 때문에 oracleDB가 없다면 oracle-xe를 다운받아 설치한 뒤 sql을 실행하세요
 db userId와 userPw는 각 DAO 안에 getConnection 매서드 안에 있습니다
+
+web에서 서버를 키기 위해서는 xampp controller 실행하여 
+apache항목 config httpd.config 파일을 실행하여 ctrl + f를 누른 후 document를 입력후 enter 키를 
+4번치면 나오는 document root와 그 밑에 있는 directe root에 /public/ 을 추가해주세요
